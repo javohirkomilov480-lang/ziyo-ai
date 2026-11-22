@@ -1,0 +1,151 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080D19;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+.app {
+    max-width: 600px;
+    height: 100dvh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 5px 20px;
+    border-bottom: 1px solid #1B2A40;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #168BFF;
+}
+
+button {
+    cursor: pointer;
+}
+
+.new-chat {
+    background: #142B49;
+    color: #55A8FF;
+    border: 1px solid #2364A0;
+    border-radius: 10px;
+    padding: 11px;
+}
+
+.chat-area {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px 5px;
+}
+
+.welcome {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.ai-logo {
+    width: 75px;
+    height: 75px;
+    background: #102C50;
+    color: #299AFF;
+    border: 1px solid #168BFF;
+    border-radius: 25px;
+    display: grid;
+    place-items: center;
+    font-size: 42px;
+    margin: auto auto 25px;
+}
+
+.welcome h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.welcome h2 {
+    color: #299AFF;
+    font-size: 24px;
+}
+
+.welcome p {
+    color: #93A4BA;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+    background: #111E32;
+    border: 1px solid #243D5C;
+    padding: 10px;
+    border-radius: 16px;
+}
+
+.input-area input {
+    flex: 1;
+    min-width: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 15px;
+}
+
+.input-area button {
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 12px;
+    background: #168BFF;
+    color: white;
+    font-size: 23px;
+}
+
+footer {
+    text-align: center;
+    color: #64758C;
+    font-size: 11px;
+    padding: 12px 0 5px;
+}
+
+.message {
+    padding: 13px;
+    border-radius: 13px;
+    line-height: 1.5;
+    max-width: 90%;
+    overflow-wrap: anywhere;
+}
+
+.user-message {
+    background: #174B80;
+    align-self: flex-end;
+}
+
+.ai-message {
+    background: #14243B;
+    align-self: flex-start;
+}

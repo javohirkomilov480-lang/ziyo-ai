@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#080D19">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZIYO AI CHAT 1.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<>
+
+<div class="app">
+
+    <header class="topbar">
+        <div class="logo">✦ ZIYO <span>AI</span></div>
+        <button class="new-chat" onclick="newChat()">
+            + Yangi chat
+        </button>
+    </header>
+
+    <main class="chat-area">
+
+        <div class="welcome" id="welcome">
+            <div class="ai-logo">✦</div>
+            <h1>Salom!</h1>
+            <h2>Men ZIYO AI</h2>
+            <p>Sizga bugun qanday yordam bera olaman?</p>
+        </div>
+
+        <div id="messages" class="messages"></div>
+
+    </main>
+
+    <div class="input-area">
+        <input
+            type="text"
+            id="userInput"
+            placeholder="ZIYO AI ga xabar yozing..."
+            autocomplete="off"
+        >
+
+        <button id="sendButton" onclick="sendMessage()">
+            ➤
+        </button>
+    </div>
+
+    <footer>
+        ZIYO AI · Sizning aqlli yordamchingiz
+    </footer>
+
+</div>
+
+<script src="script.js"></scrip
+                          
+<script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("./sw.js")
+        .then(() => console.log("ZIYO AI offline tayyor!"))
+        .catch((error) => console.log("Xatolik:", error));
+    });
+  }
+</script>
+t>

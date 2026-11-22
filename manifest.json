@@ -1,0 +1,19 @@
+
+{
+  "name": "ZIYO AI",
+  "short_name": "ZIYO AI",
+  "description": "Sizning aqlli AI yordamchingiz",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#080D19",
+  "theme_color": "#080D19",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "./icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
